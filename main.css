@@ -42,7 +42,7 @@ a {
   width: auto;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 1366px) {
   .nav-logo {
     max-height: 50px;
     width: auto;
