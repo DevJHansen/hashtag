@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Gloria+Hallelujah");
 @import url("https://fonts.googleapis.com/css?family=Kodchasan");
 @import url("https://fonts.googleapis.com/css?family=Cabin+Sketch");
+@import url("https://fonts.googleapis.com/css?family=Bai+Jamjuree|Cabin+Sketch");
 
 html {
   scroll-behavior: smooth;
@@ -13,7 +14,8 @@ body {
   min-height: 100%;
   line-height: 2em;
   color: white;
-  font-family: "Cabin Sketch", cursive;
+  /* font-family: "Cabin Sketch", cursive; */
+  font-family: "Bai Jamjuree", sans-serif;
   /* font-family: "Shadows Into Light", cursive; */
   /* font-family: "Gloria Hallelujah", cursive; */
   /* font-family: "Kodchasan", sans-serif; */
