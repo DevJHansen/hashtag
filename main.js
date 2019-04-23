@@ -90,17 +90,23 @@ if (animation === false) {
 
 //Form validation
 function validate() {
-  event.preventDefault();
-  let fname = document.getElementById("first_name");
+  // event.preventDefault();
+  let fname = document.getElementById("name");
   let email = document.getElementById("email");
   let message = document.getElementById("textarea1");
-  var warning = document.createElement("H5");
+  let subject = document.getElementById("subject");
+  var warning = document.createElement("H6");
   var warningText = document.createTextNode(
     'Please fill in all fields marked with a "*"'
   );
   warning.appendChild(warningText);
 
-  if (fname.value == "" || email.value == "" || message.value == "") {
+  if (
+    fname.value == "" ||
+    email.value == "" ||
+    message.value == "" ||
+    subject.value == ""
+  ) {
     document.getElementById("form-top").appendChild(warning);
     return false;
   } else {

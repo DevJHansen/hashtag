@@ -2,9 +2,17 @@
 @import url("https://fonts.googleapis.com/css?family=Kodchasan");
 @import url("https://fonts.googleapis.com/css?family=Cabin+Sketch");
 @import url("https://fonts.googleapis.com/css?family=Bai+Jamjuree|Cabin+Sketch");
+@import url("https://fonts.googleapis.com/css?family=Fredericka+the+Great");
+@import url("https://fonts.googleapis.com/css?family=Neucha");
+@import url("https://fonts.googleapis.com/css?family=Sanchez");
 
 html {
   scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -15,10 +23,15 @@ body {
   line-height: 2em;
   color: white;
   /* font-family: "Cabin Sketch", cursive; */
-  font-family: "Bai Jamjuree", sans-serif;
-  /* font-family: "Shadows Into Light", cursive; */
-  /* font-family: "Gloria Hallelujah", cursive; */
+  /* font-family: "Bai Jamjuree", sans-serif; */
+  /* font-family: "Neucha", cursive; */
+  font-family: "Sanchez", serif;
+  /* font-family: "Fredericka the Great", cursive; */
   /* font-family: "Kodchasan", sans-serif; */
+}
+
+body p {
+  font-family: "Bai Jamjuree", sans-serif;
 }
 
 a {
@@ -44,8 +57,14 @@ a {
 
 @media (max-width: 1366px) {
   .nav-logo {
-    max-height: 50px;
+    max-height: 40px;
     width: auto;
+  }
+}
+
+@media (max-width: 1100px) {
+  .nav-li {
+    font-size: 16px !important;
   }
 }
 
@@ -86,6 +105,7 @@ a {
   margin: 5%;
   margin-right: 7%;
   color: white;
+  /* padding-bottom: 15vh; */
 }
 
 .icons p {
@@ -156,7 +176,7 @@ a {
   height: auto;
 }
 
-@media (max-width: 610px) {
+@media (max-width: 600px) {
   .icon-img {
     max-width: 80vw;
   }
@@ -177,6 +197,7 @@ a {
   font-size: 15px;
   line-height: 24px;
   color: white;
+  font-family: "Bai Jamjuree", sans-serif !important;
 }
 .site-footer hr {
   border-top-color: #bbb;
@@ -321,8 +342,15 @@ a {
 .input-field input[type="text"]:focus + label {
   color: rgba(22, 162, 215, 1) !important;
 }
+.input-field input[type="number"]:focus + label {
+  color: rgba(22, 162, 215, 1) !important;
+}
 /* label underline focus color */
 .input-field input[type="text"]:focus {
+  border-bottom: 1px solid rgba(22, 162, 215, 1) !important;
+  box-shadow: 0 1px 0 0 rgba(22, 162, 215, 1) !important;
+}
+.input-field input[type="number"]:focus {
   border-bottom: 1px solid rgba(22, 162, 215, 1) !important;
   box-shadow: 0 1px 0 0 rgba(22, 162, 215, 1) !important;
 }
@@ -474,4 +502,34 @@ video {
   width: 100%;
   overflow: hidden;
   margin: 0 auto;
+}
+
+.sticky-btm {
+  bottom: 0;
+  /* height: 20vh; */
+  max-height: 100%;
+  width: 100%;
+  color: #00aced;
+  font-size: 12px;
+}
+
+.container-footer {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+/* .home-main {
+  padding-bottom: 1
+} */
+
+/* @media (max-width: 600px) {
+  .sticky-btm {
+    position: absolute;
+  }
+} */
+
+@media (min-width: 840px) {
+  .sticky-btm {
+    position: fixed;
+  }
 }
