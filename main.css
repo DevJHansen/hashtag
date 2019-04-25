@@ -485,7 +485,7 @@ video {
 
 .prod-icon {
   max-width: 25%;
-  height: auto;
+  max-height: auto;
 }
 
 .prod-list h5 {
@@ -532,4 +532,13 @@ video {
   .sticky-btm {
     position: fixed;
   }
+}
+
+.hb-logo {
+  max-height: 200px;
+  width: auto;
+}
+
+.logo-box:hover {
+  cursor: pointer;
 }
