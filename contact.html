@@ -131,30 +131,50 @@
       <div class="container">
         <div class="row">
           <div id="form-top" style="color: red;"></div>
-          <form onsubmit="return validate()" method="POST" class="col s12">
+          <form
+            onsubmit="return validate()"
+            method="POST"
+            data-netlify="true"
+            class="col s12"
+          >
             <div class="row">
               <div class="input-field col s6">
-                <input id="name" type="text" class="validate" />
+                <input id="name" type="text" class="validate" name="name" />
                 <label for="name">*Name</label>
               </div>
               <div class="input-field col s6">
-                <input id="company_name" type="text" class="validate" />
+                <input
+                  id="company_name"
+                  type="text"
+                  class="validate"
+                  name="company_name"
+                />
                 <label for="company_name">Company Name</label>
               </div>
             </div>
             <div class="row">
               <div class="input-field col s6">
-                <input id="email" type="email" class="validate" />
+                <input id="email" type="email" class="validate" name="email" />
                 <label for="email">*Email</label>
               </div>
               <div class="input-field col s6">
-                <input id="contact_number" type="number" class="validate" />
+                <input
+                  id="contact_number"
+                  type="number"
+                  class="validate"
+                  name="contact_number"
+                />
                 <label for="contact_number">Contact Number</label>
               </div>
             </div>
             <div class="row">
               <div class="input-field col s12">
-                <input id="subject" type="text" class="validate" />
+                <input
+                  id="subject"
+                  type="text"
+                  class="validate"
+                  name="subject"
+                />
                 <label for="subject">*Subject</label>
               </div>
             </div>
@@ -163,10 +183,12 @@
                 <textarea
                   id="textarea1"
                   class="materialize-textarea"
+                  name="message"
                 ></textarea>
                 <label for="textarea1">*How can we help?</label>
               </div>
             </div>
+            <div data-netlify-recaptcha="true"></div>
             <!-- add submit -->
             <button
               class="btn waves-effect waves-light"
