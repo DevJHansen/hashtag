@@ -38,6 +38,15 @@ a {
   all: unset;
 }
 
+.hyper {
+  color: #2a79f9 !important;
+}
+
+.hyper:hover {
+  cursor: pointer;
+  border-bottom: 1px solid #2a79f9;
+}
+
 .navbar-fixed {
   min-height: 10vh;
 }
@@ -333,7 +342,7 @@ a {
 }
 
 .iframe {
-  width: 70vw;
+  width: 100%;
   height: 50vh;
   border: 2px solid #ffe732;
 }
@@ -431,8 +440,39 @@ video {
 }
 
 .vid {
-  height: 75vh;
-  width: 100%;
+  height: 630px;
+  width: 1120px;
+}
+
+@media (max-width: 1500px) {
+  .vid {
+    width: 840px;
+    height: 472px;
+  }
+}
+@media (max-width: 1160px) {
+  .vid {
+    width: 630px;
+    height: 354px;
+  }
+}
+@media (max-width: 760px) {
+  .vid {
+    width: 472px;
+    height: 266px;
+  }
+}
+@media (max-width: 560px) {
+  .vid {
+    width: 354px;
+    height: 200px;
+  }
+}
+@media (max-width: 420px) {
+  .vid {
+    width: 266px;
+    height: 150px;
+  }
 }
 
 #slider {
@@ -541,4 +581,10 @@ video {
 
 .logo-box:hover {
   cursor: pointer;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
