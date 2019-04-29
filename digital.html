@@ -24,14 +24,9 @@
       type="image/x-icon"
     />
     <meta
-      property="og:image"
-      content="https://scontent-jnb1-1.xx.fbcdn.net/v/t1.0-9/55641884_2342320832654279_7980220991710167040_n.jpg?_nc_cat=102&_nc_ht=scontent-jnb1-1.xx&oh=e2f3629d131f48d6cbf0f955539c19b3&oe=5D35F68E"
-    />
-    <meta
       name="description"
       content="Your one stop Marketing Agency offering video production, digital, design and events in Windhoek, Namibia. Call us now on 061 300 310 "
     />
-    <link rel="image_src" href="./images/Logo_Header.png" />
     <link
       href="https://fonts.googleapis.com/css?family=Cabin+Sketch"
       rel="stylesheet"
@@ -39,6 +34,10 @@
     <link
       href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
       rel="stylesheet"
+    />
+    <meta
+      property="og:image"
+      content="https://scontent-jnb1-1.xx.fbcdn.net/v/t1.0-9/55641884_2342320832654279_7980220991710167040_n.jpg?_nc_cat=102&_nc_ht=scontent-jnb1-1.xx&oh=e2f3629d131f48d6cbf0f955539c19b3&oe=5D35F68E"
     />
     <link
       rel="stylesheet"
@@ -50,6 +49,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
+    <link rel="image_src" href="./images/Logo_Header.png" />
     <script
       src="https://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -88,11 +88,9 @@
               <li>
                 <a class="nav-li" href="./productions.html">Productions</a>
               </li>
-              <li><a class="nav-li" href="./events.html">Events</a></li>
-              <li><a class="nav-li page-color" href="#">Design</a></li>
-              <li>
-                <a class="nav-li" href="./digital.html">Digital</a>
-              </li>
+              <li><a class="nav-li" href="#">Events</a></li>
+              <li><a class="nav-li" href="./design.html">Design</a></li>
+              <li><a class="nav-li page-color" href="#">Digital</a></li>
               <!-- <li><a class="nav-li" href="./about.html">About Us</a></li> -->
               <li><a class="nav-li" href="./contact.html">Get In Touch</a></li>
             </ul>
@@ -104,19 +102,22 @@
     <ul class="sidenav" id="mobile-nav">
       <li><a href="./index.html">Home</a></li>
       <li><a href="./productions.html">Productions</a></li>
-      <li><a href="./events.html">Events</a></li>
-      <li><a class="page-color" href="#">Design</a></li>
-      <li><a href="./digital.html">Digital</a></li>
+      <li><a class="page-color" href="#">Events</a></li>
+      <li><a href="./design.html">Design</a></li>
+      <li><a href="#">Digital</a></li>
       <!-- <li><a href="./about.html">About Us</a></li> -->
       <li><a href="./contact.html">Get In Touch</a></li>
     </ul>
 
-    <!-- about -->
-    <section class="about">
+    <!-- Events -->
+    <br />
+    <br />
+    <section>
       <div class="container">
         <div class="about-start">
-          <h2>DYNAMIC<span class="about-h1"> DESIGN</span></h2>
+          <h2>SIMPLIFIED<span class="about-h1"> DIGITAL</span></h2>
           <div class="row">
+            <!-- change l12 to l6 when you have description -->
             <div class="col m12 l6">
               <video
                 playsinline
@@ -127,65 +128,40 @@
                 height="auto"
                 autoplay="autoplay"
               >
-                <source src="./images/Design.mp4" type="video/mp4" />
+                <source src="./images/Digital.mp4" type="video/mp4" />
               </video>
             </div>
-            <div class="col m12 l6">
+            <!-- <div class="col m12 l6">
               <div class="middle">
                 <div class="inner">
                   <p class="center-align production-p">
-                    Design is the very crux that connects your company to your
-                    brand and gets your clients to pay attention. Our highly
-                    skilled design team are capable of crafting cohesive design
-                    strategies that’ll take your brand to new heights.
+                   Keeping pace with our rapidly evolving digital world 
                   </p>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
       <br />
     </section>
+    <br />
+    <br />
 
-    <!-- all things filming -->
-    <section>
-      <div class="container center-align">
-        <h3 class="center-align">
-          Your <span style="color: #16a2d7">online</span> presence is critical
-          to your business’s
-        </h3>
-        <h2 class="center-align" style="color: #16a2d7;">
-          growth and success
-        </h2>
-        <br />
-        <p style="font-size: 20px;">
-          Leveraging relevant digital marketing channels and implementing
-          creative and innovative strategies, we can drive your company’s online
-          presence, exponentially boosting brand awareness, lead generation and
-          sales.
-        </p>
-      </div>
-
-      <!-- carousel -->
-      <div id="slidy-container">
-        <figure id="slidy">
-          <img src="./images/Design_Portfolio_Slide1-2.png" alt="" />
-          <img src="./images/Design_Portfolio_Slide2-1.png" alt="" />
-          <img src="./images/Design_Portfolio_Slide3.png" alt="" />
-          <img src="./images/Design_Portfolio_Slide4-1.png" alt="" />
-          <img src="./images/Design_Portfolio_Slide5.png" alt="" />
-          <img src="./images/Design_Portfolio_Slide6.png" alt="" />
-          <img src="./images/Design_Portfolio_Slide7.png" alt="" />
-          <img src="./images/Design_Portfolio_Slide10.png" alt="" />
-        </figure>
-      </div>
-    </section>
+    <!-- carousel -->
+    <div id="slidy-container" class="about">
+      <figure id="slidy">
+        <img src="./images/Digital_Portfolio_Slide1.png" alt="" />
+        <img src="./images/Digital_Portfolio_Slide2.png" alt="" />
+        <img src="./images/Digital_Portfolio_Slide3.png" alt="" />
+      </figure>
+    </div>
 
     <!-- what we do -->
-    <section class="about">
+    <section>
       <div class="container" style="border-bottom: 2px solid yellow;">
         <div style="border-bottom: 2px solid yellow;" class="about-start">
+          <br />
           <h3 class="center-align">
             - WHAT WE<span class="about-h1"> DO </span> -
           </h3>
@@ -194,53 +170,80 @@
         <br />
         <div class="row prod-list">
           <div class="col m4 s12 center-align">
-            <img src="./images/design_1-1.png" class="prod-icon" alt="" />
-            <h5>Graphic Design</h5>
+            <img
+              src="./images/design_12.png"
+              class="prod-icon"
+              alt=""
+              style="color: blue;"
+            />
+            <h5>Social Media Management</h5>
             <p>
-              We are constantly searching for new and creative ways to visually
-              communicate with viewers. Whether you’re looking for a new CI or
-              just want to breathe some new life into your marketing and social
-              media visuals, we’ve got you covered!
+              Social media is an extension of your organisation’s marketing and
+              brand efforts and is a vital component when adding value to your
+              customer service. A strategy poised with intentionality and
+              authenticity ensures your organisation achieves consistent and
+              desirable reach and visibility with engagement that leads to
+              ultimate conversion.
             </p>
           </div>
           <div class="col m4 s12 center-align">
-            <img src="./images/design_2-1.png" class="prod-icon" alt="" />
-            <h5>Layout Design</h5>
+            <img src="./images/design_8-1.png" class="prod-icon" alt="" />
+            <h5>Content Management</h5>
             <p>
-              Here at Hashtag Media we know the way you visually present
-              information is just as important as the content you are
-              presenting. Our layouts will make your reader look twice before
-              turning the page!
+              Content is a crucial component when developing a comprehensive and
+              cohesive digital marketing strategy. It directly impacts how your
+              organisation is perceived, and perception is a powerful tool as it
+              dictates what reality your audience sees and experiences. Content
+              Management, therefore, requires optimal planning and organisation,
+              ensuring the correct information is garnered and successfully
+              authored, revised and approved before publication. Your content,
+              in turn, suffers no downtime and achieves maximum visibility.
             </p>
           </div>
           <div class="col m4 s12 center-align">
-            <img src="./images/design_9-1.png" class="prod-icon" alt="" />
-            <h5>Packaging Design</h5>
+            <img src="./images/design_11-1.png" class="prod-icon" alt="" />
+            <h5>Digital Marketing</h5>
             <p>
-              In today’s competitive retail industry your product’s packaging
-              needs to speak for itself. We will make sure that message is loud
-              and clear!
+              Your online presence is critical to your business’s growth and
+              success. Leveraging relevant digital marketing channels and
+              implementing creative and innovative strategies aligned with your
+              unique business goals, your company’s online presence can be
+              driven to greater heights, exponentially boosting brand awareness,
+              lead generation and sales.
             </p>
           </div>
         </div>
         <div class="row prod-list">
           <div class="col m4 s12 center-align">
-            <img src="./images/events_1.png" class="prod-icon" alt="" />
-            <h5>Motion Graphics</h5>
+            <img src="./images/design_10.png" class="prod-icon" alt="" />
+            <h5>AI Driven Email Marketing</h5>
             <p>
-              Keep your brand and message on the move! Motion graphics adds just
-              a little extra ‘spice’ to your marketing and let’s face it… all
-              the cool kids are doing it.
+              Our software provides a better way to optimize your campaigns
+              using AI. Our algorithms assess the impact of your emails in the
+              context of your entire campaign, tailor your campaigns to each
+              customer, and focus on the goals that matter to you and your
+              business.
             </p>
           </div>
           <div class="col m4 s12 center-align">
-            <img src="./images/design_10.png" class="prod-icon" alt="" />
-            <h5>3D Event Layout</h5>
+            <img src="./images/design_7-1.png" class="prod-icon" alt="" />
+            <h5>Web Design & Development</h5>
             <p>
-              Not all of us are visual thinkers… some folks need to see what you
-              mean before they get what you mean. We can help sell your event
-              concept with stunning 3d mockups that bring your dreams into a
-              real space!
+              Having an online presence in 2019 is vital. Hashtag Media can
+              provide you with all the tools and services to get you up and
+              running. We do everything from simple landing pages all the way to
+              advanced web applications.
+            </p>
+          </div>
+          <div class="col m4 s12 center-align">
+            <img src="./images/prod_15.png" class="prod-icon" alt="" />
+            <h5>Mobile App Development</h5>
+            <p>
+              Using the latest technologies and industry standards, Hashtag
+              Media can build high quality mobile apps for both IOS and Android.
+              Whether your app is the next big thing or a more convenient way to
+              interact with customers, Hashtag Media will provide you with
+              tailor made solutions.
             </p>
           </div>
         </div>
@@ -250,7 +253,7 @@
 
     <!-- footer -->
     <section>
-      <footer class="site-footer">
+      <footer class="site-footer contact-footer">
         <div class="container">
           <div class="row">
             <div class="col s12 m6">
