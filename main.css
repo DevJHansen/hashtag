@@ -410,7 +410,7 @@ video {
 .inner {
   margin-left: auto;
   margin-right: auto;
-  padding-left: 5vw;
+  padding-left: 0vw;
 }
 
 .production-p {
@@ -587,4 +587,17 @@ input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+@media (max-width: 800px) {
+  .prod-1 {
+    padding-left: 4vw;
+  }
+}
+
+@media (max-width: 350px) {
+  .prod-1 {
+    padding-left: 0;
+    font-size: 39px;
+  }
 }
